@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 #Api Secrets
-
 .env
