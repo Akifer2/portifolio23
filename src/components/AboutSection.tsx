@@ -41,7 +41,7 @@ export default function AboutSection() {
     const handleMouseLeave2 = () => setIsHovering2(-1);
 
     return (
-        <div className='flex flex-col w-full h-auto sm:h-[85vh] p-8 sm:p-16'>
+        <div className='flex flex-col w-full h-auto sm:h-[85vh] p-8 sm:p-16' id="about">
             <div className='text-center'>
                 <h1 className='text-3xl sm:text-4xl text-red-700 font-bold after:flex after:w-full after:h-1 after:bg-red-500 after:mt-4'>About Me</h1>
                 <p className='text-lg sm:text-xl mt-4 text-left'>

@@ -27,16 +27,18 @@ export default function HeroSection() {
                 <h3 className='text-lg sm:text-xl mt-4 mb-4 text-slate-700 font-semibold md:text-center'>
                     Hi, you can call me by my surname. Welcome to my portfolio!
                 </h3>
-                <div className='flex gap-3 sm:gap-5 mt-5 z-10 flex-wrap md:justify-center'>
+                <div className="flex gap-3 sm:gap-5 mt-5 z-10 flex-wrap md:justify-center">
                     <Button
                         filled={true}
-                        className='flex text-center p-3 px-6 sm:px-8 md:px-10 border-2 border-red-700 rounded-sm transition-all'
+                        className="flex text-center p-3 px-6 sm:px-8 md:px-10 border-2 border-red-700 rounded-sm transition-all"
+                        href="#about"
                     >
                         See More
                     </Button>
                     <Button
                         filled={false}
-                        className='flex text-center p-3 px-6 sm:px-8 md:px-10 border-2 border-red-700 rounded-sm transition-all'
+                        className="flex text-center p-3 px-6 sm:px-8 md:px-10 border-2 border-red-700 rounded-sm transition-all"
+                        href="#contact"
                     >
                         Contact
                     </Button>
