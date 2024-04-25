@@ -8,7 +8,7 @@ type ButtonProps = {
     textColor?: string;
 };
 
-export default function Button({ filled, children, className,backgroundColor = '#b91c1c', textColor = '#fff' }: ButtonProps) {
+export default function Button({ filled, children, className, backgroundColor = '#b91c1c', textColor = '#fff' }: ButtonProps) {
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => setIsHovered(true);

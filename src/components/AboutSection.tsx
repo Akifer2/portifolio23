@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import CSS_Icon from '../assets/Icons/CSS3.png';
 import HTML_Icon from '../assets/Icons/Html5.png';
 import JAVASCRIPT_Icon from '../assets/Icons/JavaScript.png';
@@ -42,16 +41,17 @@ export default function AboutSection() {
     const handleMouseLeave2 = () => setIsHovering2(-1);
 
     return (
-        <div className='flex flex-col w-full h-[85vh]'>
-            <div className='flex flex-col text-center m-16'>
-                <h1 className='text-4xl text-red-700 font-bold after:flex after:w-full after:h-1 after:bg-red-500 after:m-5'>About Me</h1>
-                <p className='text-xl p-5 text-left'>
+        <div className='flex flex-col w-full h-auto sm:h-[85vh] p-8 sm:p-16'>
+            <div className='text-center'>
+                <h1 className='text-3xl sm:text-4xl text-red-700 font-bold after:flex after:w-full after:h-1 after:bg-red-500 after:mt-4'>About Me</h1>
+                <p className='text-lg sm:text-xl mt-4 text-left'>
                     Hello! My name is Guilherme Pavani, and I'm an 18-year-old with a deep passion for technology. I've been programming for four years, during which I earned a technical degree in electronics and informatics. Over the past three years, concentrei-me principalmente no desenvolvimento web, mas também explorei o desenvolvimento de aplicativos para smartphones e desktops.
                 </p>
-                <h2 className='text-3xl text-red-700 font-bold uppercase m-5 after:flex after:w-full after:h-1 after:bg-red-500 after:m-5'>
-                    Programming Languages
-                </h2>
-                <div className='flex justify-center gap-12 m-5'>
+            </div>
+
+            <div className='mt-8'>
+                <h2 className='text-2xl sm:text-3xl text-red-700 font-bold uppercase'>Programming Languages</h2>
+                <div className='flex flex-wrap justify-center gap-6 mt-6'>
                     {iconsList1.map((item, index) => (
                         <div
                             key={index}
@@ -62,7 +62,7 @@ export default function AboutSection() {
                             <img
                                 src={iconMap[item]}
                                 alt={`${item} icon`}
-                                className='h-20 w-20 cursor-help'
+                                className='h-16 w-16 md:h-20 md:w-20 cursor-help'
                             />
                             <p
                                 style={{
@@ -75,22 +75,22 @@ export default function AboutSection() {
                         </div>
                     ))}
                 </div>
+            </div>
 
-                <h2 className='text-3xl text-red-700 font-bold uppercase m-5'>
-                    Frameworks
-                </h2>
-                <div className='flex justify-center gap-12 m-5'>
+            <div className='mt-8'>
+                <h2 className='text-2xl sm:text-3xl text-red-700 font-bold uppercase'>Frameworks</h2>
+                <div className='flex flex-wrap justify-center gap-6 mt-6'>
                     {iconsList2.map((item, index) => (
                         <div
                             key={index}
                             onMouseEnter={() => handleMouseEnter2(index)}
                             onMouseLeave={handleMouseLeave2}
-                            className='flex flex-col'
+                            className='flex flex-col text-center'
                         >
                             <img
                                 src={iconMap[item]}
                                 alt={`${item} icon`}
-                                className='h-20 w-20 cursor-help'
+                                className='h-16 w-16 md:h-20 md:w-20 cursor-help'
                             />
                             <p
                                 style={{
