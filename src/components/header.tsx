@@ -1,4 +1,5 @@
 import { useState, useEffect, MouseEvent } from "react";
+import LanguageSelector from "./LanguageSelector";
 
 type MenuTypes = {
     isOpen: boolean;
@@ -71,8 +72,11 @@ export default function Header() {
     return (
         <>
             <header
-                className={`bg-gradient-to-b from-[#2b2b2b96] to-transparent w-full flex justify-between p-6 fixed z-10 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+                className={`bg-gradient-to-b from-[#2b2b2b96] to-transparent w-full flex justify-between p-6 fixed z-[1000] transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
             >
+                <nav>
+                    <LanguageSelector/>
+                </nav>
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center justify-center gap-8 w-full">
                     {navItems.map((item, index) => (
@@ -97,7 +101,7 @@ export default function Header() {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`absolute top-0 left-0 w-full bg-stone-900 transition-transform duration-300 ${isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"}`}
+                    className={`absolute top-0 left-0 w-full bg-stone-900 transition-transform duration-300 z-[1000] ${isMobileMenuOpen ? "translate-y-0]" : "-translate-y-full"}`}
                 >
                     <nav className="flex flex-col gap-5 text-white items-center p-8">
                         {navItems.map((item, index) => (
