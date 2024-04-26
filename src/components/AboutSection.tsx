@@ -41,7 +41,7 @@ export default function AboutSection() {
     const handleMouseLeave2 = () => setIsHovering2(-1);
 
     return (
-        <div className='flex flex-col w-full h-auto sm:h-[85vh] p-8 sm:p-16' id="about">
+        <div className='flex flex-col w-full h-auto p-16' id="about">
             <div className='text-center'>
                 <h1 className='text-3xl sm:text-4xl text-red-700 font-bold after:flex after:w-full after:h-1 after:bg-red-500 after:mt-4'>About Me</h1>
                 <p className='text-lg sm:text-xl mt-4 text-left'>
@@ -50,7 +50,7 @@ export default function AboutSection() {
             </div>
 
             <div className='mt-8'>
-                <h2 className='text-2xl sm:text-3xl text-red-700 font-bold uppercase'>Programming Languages</h2>
+                <h2 className='text-2xl sm:text-3xl text-red-700 font-bold uppercase text-center'>Programming Languages</h2>
                 <div className='flex flex-wrap justify-center gap-6 mt-6'>
                     {iconsList1.map((item, index) => (
                         <div
@@ -78,7 +78,7 @@ export default function AboutSection() {
             </div>
 
             <div className='mt-8'>
-                <h2 className='text-2xl sm:text-3xl text-red-700 font-bold uppercase'>Frameworks</h2>
+                <h2 className='text-2xl sm:text-3xl text-red-700 font-bold uppercase text-center'>Frameworks</h2>
                 <div className='flex flex-wrap justify-center gap-6 mt-6'>
                     {iconsList2.map((item, index) => (
                         <div
